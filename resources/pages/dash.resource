@@ -5,7 +5,6 @@ Library    Browser
 
 *** Keywords ***
 User Logged In
-    
     ${header_tittle}        
     ...    Set Variable    
     ...    Aquela figurinha incrível a um clique de distância.
