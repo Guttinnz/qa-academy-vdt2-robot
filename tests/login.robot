@@ -29,3 +29,7 @@ Não deve logar com senha incorreta
     # Sleep               1
     # ${temp}             Get Page Source
     # Log                 ${temp}
+
+    #Deve exibir notificação toaster se a senha não for preenchida
+     #Deve exibir notificação toaster se o email não for preenchido
+      #Deve exibir notificação toaster se o email e a senha não forem preenchidos
