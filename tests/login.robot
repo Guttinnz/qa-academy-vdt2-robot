@@ -25,11 +25,31 @@ Não deve logar com senha incorreta
     #Thinking Time
     Sleep                      1
 
+Deve exibir notificação toaster se a senha não for preenchida
+
+    Go To Login Page
+
+    Submit Credentials         papito@gmail.com    ${EMPTY}
+
+    Toast Message Should Be    Por favor, informe a sua senha secreta!
+
+Deve exibir notificação toaster se o email não for preenchido
+
+    Go To Login Page                               
+
+    Submit Credentials         ${EMPTY}            vaibrasil
+    
+    Toast Message Should Be    Por favor, informe o seu email!
+
+Deve exibir notificação toaster se o email e a senha não forem preenchidos
+
+    Go To Login Page
+
+    Submit Credentials         ${EMPTY}            ${EMPTY}
+
+    Toast Message Should Be    Por favor, informe suas credenciais!
+
     # código abaixo para logar todo código html da página para assim ter o seletor do toast
     # Sleep               1
     # ${temp}             Get Page Source
     # Log                 ${temp}
-
-    #Deve exibir notificação toaster se a senha não for preenchida
-     #Deve exibir notificação toaster se o email não for preenchido
-      #Deve exibir notificação toaster se o email e a senha não forem preenchidos
